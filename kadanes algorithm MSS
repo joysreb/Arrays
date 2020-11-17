@@ -1,0 +1,8 @@
+int arraymax(int[] arr){
+int max_array=arr[0];
+int curr_array=max_array;
+for(int i=1;i<arr.length;i++){
+   curr_array=Math.max(arr[i]+curr_array,arr[i]);
+   max_array=Math.max(curr_array,max_array);
+}
+return max_array;
